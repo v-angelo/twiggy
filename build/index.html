@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twiggy</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/logo.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body
+    id="start"
+    class="min-h-screen max-w-480 mx-auto bg-slate-50 dark:bg-gray-950 text-white"
+  >
+    <div class="h-10 w-full bg-lime-500 dark:bg-lime-600 hidden md:block"></div>
+    <!-- Header -->
+    <header class="w-full bg-lime-500 dark:bg-lime-600 sticky top-0 z-10">
+      <nav class="max-w-6xl mx-auto flex justify-between">
+        <a
+          class="hover:opacity-90 flex items-center h-18 p-2"
+          href="#start"
+          alt="frontPageLink"
+        >
+          <img class="h-full" src="./img/logo.ico" alt="twiggyLogo" />
+          <h3 class="text-3xl font-bold">Twiggy</h3>
+        </a>
+        <div
+          class="md:flex gap-4 items-center text-xl hidden font-semibold cursor-pointer"
+        >
+          <a href="#page02" class="inline hover:opacity-90">Twiggy Corporate</a>
+          <a href="#footer" class="inline hover:opacity-90">Partner with us</a>
+          <article
+            class="p-3 justify-center rounded-xl flex items-center border-2 hover:border-black"
+          >
+            <p>Get the App 🡕</p>
+          </article>
+          <article
+            class="p-3 w-30 bg-black justify-center rounded-xl flex items-center hover:border-2"
+          >
+            <p>Sign in</p>
+          </article>
+        </div>
+        <!-- menuButton -->
+        <button id="hamburger-button" class="md:hidden mr-4 text-4xl relative">
+          <div id="hamburger-icon" class="cursor-pointer">☰</div>
+          <div id="cross-icon" class="text-6xl hidden absolute right-0 top-0">
+            ×
+          </div>
+        </button>
+        <!-- mobile menu -->
+        <section
+          id="mobile-menu"
+          class="animate-slideDown origin-top absolute top-18 text-black dark:text-white dark:bg-gray-950 bg-[#f2f5f0] w-full text-4xl flex-col justify-center hidden"
+        >
+          <!-- <button class="text-6xl self-end px-6 cursor-pointer">&times;</button> -->
+          <nav
+            class="flex flex-col min-h-screen items-center py-8"
+            aria-label="mobile"
+          >
+            <a href="#start" class="w-full text-center py-6 hover:opacity-90"
+              >Home</a
+            >
+            <a href="#page02" class="w-full text-center py-6 hover:opacity-90"
+              >Twiggy Corporate</a
+            >
+            <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+              >Partner with us</a
+            >
+            <a href="#" class="w-70 text-center py-6 hover:opacity-90">
+              <article
+                class="py-5 justify-center rounded-xl flex items-center border-2 hover:border-black"
+              >
+                <p>Get the App 🡕</p>
+              </article>
+            </a>
+            <a
+              href="#"
+              class="w-2/3 mx-auto flex items-center justify-center py-6 hover:opacity-90"
+            >
+              <article
+                class="p-5 w-50 bg-black text-white justify-center rounded-2xl flex items-center hover:border-2"
+              >
+                <p>Sign in</p>
+              </article>
+            </a>
+          </nav>
+        </section>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Page 01 -->
+      <section
+        id="page01"
+        class="min-h-[calc(100vh-72px)] w-full bg-lime-500 dark:bg-lime-600 relative overflow-hidden z-0"
+      >
+        <figure
+          class="absolute left-0 top-10 h-full w-1/2 max-w-xl -z-5 opacity-85"
+        >
+          <img
+            class="absolute h-5/6 -top-10 -left-20 object-contain"
+            src="./img/heroImg01.png"
+            alt="heroImg01"
+          />
+        </figure>
+        <figure
+          class="absolute top-10 right-0 h-full w-1/2 max-w-xl -z-5 opacity-85"
+        >
+          <img
+            class="absolute h-5/6 object-contain -right-25 -top-10"
+            src="./img/heroImg02.png"
+            alt="heroImg02"
+          />
+        </figure>
+        <h1
+          class="w-3/5 max-w-5xl mx-auto mt-20 2xl:mt-30 2xl:text-7xl text-3xl md:text-5xl font-bold text-center"
+        >
+          Order food & groceries. Discover best restaurants. Twiggy it!
+        </h1>
+        <article
+          class="mx-15 mt-10 2xl:mt-20 flex flex-col md:flex-row justify-center items-center gap-5"
+        >
+          <form
+            class="text-gray-600 dark:text-white bg-white dark:bg-gray-800 w-75 h-12 rounded-lg flex items-center gap-3"
+          >
+            <i
+              class="fa-solid fa-location-dot text-lime-500 dark:text-lime-600 ms-2"
+            ></i>
+            <input
+              type="text"
+              class="w-50"
+              placeholder="Enter your delivery location"
+            />
+          </form>
+          <form
+            class="text-gray-600 dark:text-white bg-white dark:bg-gray-800 w-75 h-12 rounded-lg flex items-center justify-between px-3 gap-3"
+          >
+            <input
+              type="text"
+              class="w-70"
+              placeholder="Search for restaurant, item or more"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass text-lime-500 dark:text-lime-600"
+            ></i>
+          </form>
+        </article>
+        <!-- 3 boxes -->
+        <div
+          class="flex flex-row justify-center items-center max-md:flex-col max-w-4xl mx-auto my-10 2xl:mt-20 gap-7"
+        >
+          <!-- box1 -->
+          <article
+            class="bg-slate-50 dark:bg-gray-800 relative w-60 h-60 rounded-4xl overflow-hidden dark:hover:border-white hover:border-2 hover:border-lime-600 max-md:max-h-30 cursor-pointer"
+          >
+            <h2
+              class="font-bold text-gray-800 dark:text-white text-2xl mt-5 max-md:mt-3 ms-5"
+            >
+              FOOD DELIVERY
+            </h2>
+            <h3 class="text-gray-500 font-semibold ms-5">FROM RESTAURANTS</h3>
+            <span
+              class="text-xs rounded-full bg-linear-to-r from-lime-300 to-lime-50 p-1 ml-5 mt-3 inline-block text-lime-700 font-semibold"
+              >UPTO 60% OFF</span
+            >
+            <button
+              class="w-10 h-10 text-2xl font-extrabold rounded-full dark:bg-lime-600 bg-lime-500 absolute bottom-7 left-5 text-center max-md:bottom-1 max-md:left-30"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <img
+              src="./img/boxImg01.png"
+              alt="boxImg01"
+              class="absolute object-contain h-1/2 bottom-0 right-0"
+            />
+          </article>
+          <!-- box2 -->
+          <article
+            class="cursor-pointer bg-slate-50 dark:bg-gray-800 relative w-60 h-60 rounded-4xl overflow-hidden dark:hover:border-white hover:border-2 hover:border-lime-600 max-md:max-h-30"
+          >
+            <h2
+              class="font-bold text-gray-800 dark:text-white text-2xl mt-5 max-md:mt-3 ms-5"
+            >
+              INSTAMART
+            </h2>
+            <h3 class="text-gray-500 font-semibold ms-5">INSTANT GROCERY</h3>
+            <span
+              class="text-xs rounded-full bg-linear-to-r from-lime-300 to-lime-50 p-1 ml-5 mt-3 inline-block text-lime-700 font-semibold"
+              >UPTO 60% OFF</span
+            >
+            <button
+              class="w-10 h-10 text-2xl font-extrabold rounded-full dark:bg-lime-600 bg-lime-500 absolute bottom-7 left-5 text-center max-md:bottom-1 max-md:left-30"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <img
+              src="./img/boxImg02.png"
+              alt="boxImg02"
+              class="absolute object-contain h-1/2 bottom-0 -right-5"
+            />
+          </article>
+          <!-- box3 -->
+          <article
+            class="cursor-pointer bg-slate-50 dark:bg-gray-800 relative w-60 h-60 rounded-4xl overflow-hidden dark:hover:border-white hover:border-2 hover:border-lime-600 max-md:max-h-30"
+          >
+            <h2
+              class="font-bold text-gray-800 dark:text-white text-2xl mt-5 max-md:mt-3 ms-5"
+            >
+              DINEOUT
+            </h2>
+            <h3 class="text-gray-500 font-semibold ms-5">
+              EAT OUT & SAVE MORE
+            </h3>
+            <span
+              class="text-xs rounded-full bg-linear-to-r from-lime-300 to-lime-50 p-1 ml-5 mt-3 inline-block text-lime-700 font-semibold"
+              >UPTO 50% OFF</span
+            >
+            <button
+              class="w-10 h-10 text-2xl font-extrabold rounded-full dark:bg-lime-600 bg-lime-500 absolute bottom-7 left-5 text-center max-md:bottom-1 max-md:left-30"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <img
+              src="./img/boxImg03.png"
+              alt="boxImg03"
+              class="absolute object-contain h-1/2 bottom-0 right-0"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- Page 02 -->
+      <section id="page02" class="w-full">
+        <div
+          class="mx-auto w-3/4 max-sm:w-9/10 overflow-hidden flex flex-col items-center"
+        >
+          <!-- Sub-section: Food Items -->
+          <h2
+            class="text-black dark:text-white text-3xl font-bold max-md:text-center mt-20 mb-10"
+          >
+            Order our best food options
+          </h2>
+          <section
+            class="py-5 grid grid-rows-2 grid-cols-[repeat(9,minmax(150px,1fr))] gap-5 grid-flow-col max-w-5xl overflow-x-auto"
+          >
+            <!-- Item01 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/foodItems/pothichoru.jpg"
+                  alt="pothichoru"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Pothichoru
+              </figcaption>
+            </article>
+            <!-- Item02 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/foodItems/shawarma.jpg"
+                  alt="shawarma"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Shawarma
+              </figcaption>
+            </article>
+            <!-- Item03 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/foodItems/biriyani.jpg"
+                  alt="biriyani"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Biriyani
+              </figcaption>
+            </article>
+            <!-- Item04 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/burger.jpg" alt="burger" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Burger
+              </figcaption>
+            </article>
+            <!-- Item05 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/noodles.jpg" alt="noodles" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Noodles
+              </figcaption>
+            </article>
+            <!-- Item06 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/pizza.jpg" alt="pizza" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Pizza
+              </figcaption>
+            </article>
+            <!-- Item07 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/paratha.jpg" alt="paratha" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Paratha
+              </figcaption>
+            </article>
+            <!-- Item08 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/vada.JPG" alt="vada" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Vada
+              </figcaption>
+            </article>
+            <!-- Item09 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/dosa.jpg" alt="dosa" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Dosa
+              </figcaption>
+            </article>
+            <!-- Item10 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/pastry.jpg" alt="pastry" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Pastry
+              </figcaption>
+            </article>
+            <!-- Item11 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/pasta.jpg" alt="pasta" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Pasta
+              </figcaption>
+            </article>
+            <!-- Item12 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/salad.jpg" alt="salad" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Salad
+              </figcaption>
+            </article>
+            <!-- Item13 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/steak.jpg" alt="steak" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Steak
+              </figcaption>
+            </article>
+            <!-- Item14 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/alfaham.jpg" alt="alfaham" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Al Faham
+              </figcaption>
+            </article>
+            <!-- Item15 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/mandi.jpg" alt="mandi" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Mandi
+              </figcaption>
+            </article>
+            <!-- Item16 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/cake.jpg" alt="cake" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Cake
+              </figcaption>
+            </article>
+            <!-- Item17 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/foodItems/icecream.jpg"
+                  alt="ice cream"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Ice Cream
+              </figcaption>
+            </article>
+            <!-- Item18 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/foodItems/shake.jpg" alt="shake" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Shake
+              </figcaption>
+            </article>
+          </section>
+          <!-- Sub-section: Instamart -->
+          <h2
+            class="text-black dark:text-white text-3xl font-bold max-md:text-center mt-20 mb-10"
+          >
+            Shop groceries on Instamart
+          </h2>
+          <section
+            class="py-5 mb-20 grid grid-rows-1 grid-cols-[repeat(15,minmax(200px,1fr))] gap-5 grid-flow-col max-w-5xl overflow-x-auto"
+          >
+            <!-- Item01 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/veggies.jpg" alt="veggies" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Fresh Vegetables
+              </figcaption>
+            </article>
+            <!-- Item02 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/fruits.jpg" alt="fruits" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Fresh Fruits
+              </figcaption>
+            </article>
+            <!-- Item03 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/dryFruits.jpg"
+                  alt="dryFruits"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Dry Fruits
+              </figcaption>
+            </article>
+            <!-- Item04 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/rice-atta.jpg"
+                  alt="rice-atta"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Flours
+              </figcaption>
+            </article>
+            <!-- Item05 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/dairy.png" alt="dairy" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Dairy Products
+              </figcaption>
+            </article>
+            <!-- Item06 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/oilGhee.png" alt="oilGhee" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Oils and Ghee
+              </figcaption>
+            </article>
+            <!-- Item07 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/frozenFood.jpg"
+                  alt="instantFrozenFood"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Instant / Frozen Food
+              </figcaption>
+            </article>
+            <!-- Item08 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/choco.jpg"
+                  alt="chocolates"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Chocolates
+              </figcaption>
+            </article>
+            <!-- Item09 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/meatSeafood.jpg"
+                  alt="meatSeafood"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Meat & Seafood
+              </figcaption>
+            </article>
+            <!-- Item10 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/breadEggs.png"
+                  alt="breadEggs"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Bread & Eggs
+              </figcaption>
+            </article>
+            <!-- Item11 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/snacks.jpg" alt="snacks" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Snacks
+              </figcaption>
+            </article>
+            <!-- Item12 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img class="" src="./img/groceries/petFood.jpg" alt="petFood" />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Pet Products
+              </figcaption>
+            </article>
+            <!-- Item13 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/cleaning.jpg"
+                  alt="cleaning"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Cleaning Products
+              </figcaption>
+            </article>
+            <!-- Item14 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/babyCare.jpg"
+                  alt="babyCare"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Babycare Products
+              </figcaption>
+            </article>
+            <!-- Item15 -->
+            <article
+              class="flex flex-col justify-center items-center cursor-pointer"
+            >
+              <figure class="w-30 h-30 rounded-full overflow-hidden">
+                <img
+                  class=""
+                  src="./img/groceries/coolDrinks.jpg"
+                  alt="coolDrinks"
+                />
+              </figure>
+              <figcaption class="text-gray-500 font-semibold text-xl">
+                Cool Drinks
+              </figcaption>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section id="banner">
+        <img
+          class="md:block hidden"
+          src="./img/banner01.jpg"
+          alt="twiggyBanner"
+        />
+        <img class="md:hidden block" src="./img/banner02.jpg" alt="" />
+      </section>
+
+      <!-- Page 03 -->
+      <section id="page03">
+        <h2
+          class="text-black dark:text-white text-3xl font-bold max-md:text-center mt-10 mb-10 text-center"
+        >
+          Cities with delivery available
+        </h2>
+        <!-- Items -->
+        <section
+          class="justify-center items-center mx-auto w-3/4 max-sm:w-9/10 flex flex-row flex-wrap gap-10 mb-10"
+        >
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Bangalore
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Hyderabad
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Delhi
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Mumbai
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Gurgaon
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Pune
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Chennai
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Kolkata
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Ahmedabad
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Kochi
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Vizag
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Mysore
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Waragal
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Trichy
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+          >
+            Order online in Allahbad
+          </article>
+          <article
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-lime-600 font-bold text-center cursor-pointer"
+          >
+            <p>Show More <i class="fa-solid fa-angle-down"></i></p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#f2f5f0] dark:bg-[#02070b]">
+      <!-- Part01 -->
+      <section
+        class="pt-15 mb-5 max-w-2/3 mx-auto grid gap-3 grid-rows-2 grid-cols-[repeat(5,minmax(auto,1fr))] grid-flow-col max-lg:grid-flow-row max-lg:grid-rows-[repeat(5,minmax(auto,auto))] max-lg:grid-cols-2"
+      >
+        <!-- Item01 -->
+        <article
+          class="mb-5 flex flex-col items-baseline row-start-1 row-end-3 max-lg:row-start-1 max-lg:row-end-2 max-lg:col-start-1 max-lg:col-end-3"
+        >
+          <div class="mr-10 flex flex-row items-center justify-center">
+            <div class="w-12">
+              <img src="./img/logo.ico" alt="twiggyLogo" />
+            </div>
+            <h3 class="max-lg:text-2xl text-3xl font-bold text-lime-400">
+              Twiggy
+            </h3>
+          </div>
+          <div>
+            <p class="text-gray-600 font-semibold text-center">
+              &copy; <span id="year">2026 </span>Twiggy Limited
+            </p>
+          </div>
+        </article>
+        <!-- Item02 -->
+        <article
+          class="row-start-1 row-end-3 max-lg:row-start-2 max-lg:row-end-4 max-lg:col-start-1 max-lg:col-end-1"
+        >
+          <ul class="flex flex-col">
+            <li class="font-semibold text-lg text-black dark:text-white">
+              Company
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              About Us
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Twiggy Corporate
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Careers
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Team
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Twiggy One
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Twiggy Instamart
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Twiggy Dineout
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Minis
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Pyng
+            </li>
+          </ul>
+        </article>
+        <!-- Item03 -->
+        <article>
+          <ul class="flex flex-col">
+            <li class="font-semibold text-lg text-black dark:text-white">
+              Contact Us
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Help & Support
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Partner With Us
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Ride With Us
+            </li>
+          </ul>
+        </article>
+        <!-- Item04 -->
+        <article>
+          <ul class="flex flex-col">
+            <li class="font-semibold text-lg text-black dark:text-white">
+              Legal
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Terms & Conditions
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Cookie Policy
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Privacy Policy
+            </li>
+          </ul>
+        </article>
+        <!-- Item05 -->
+        <article
+          class="row-start-1 row-end-3 max-lg:row-start-4 max-lg:row-end-6 max-lg:col-start-1 max-lg:col-end-1"
+        >
+          <ul class="flex flex-col">
+            <li class="font-semibold text-lg text-black dark:text-white">
+              Available In
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Bangalore
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Hyderabad
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Delhi
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Mumbai
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Gurgaon
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Pune
+            </li>
+          </ul>
+        </article>
+        <!-- Item06 -->
+        <article>
+          <ul class="flex flex-col">
+            <li class="font-semibold text-lg text-black dark:text-white">
+              Life at Twiggy
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Explore With Twiggy
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Twiggy News
+            </li>
+            <li
+              class="text-gray-600 hover:opacity-90 cursor-pointer font-semibold"
+            >
+              Snackables
+            </li>
+          </ul>
+        </article>
+        <!-- Item07 -->
+        <div class="flex flex-col">
+          <h4 class="font-semibold text-lg text-black dark:text-white">
+            Social Links
+          </h4>
+          <div class="flex flex-row flex-wrap">
+            <div
+              class="mx-1 hover:opacity-80 text-xl max-sm:text-sm text-black dark:text-white"
+            >
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-linkedin-in brand"></i
+              ></a>
+            </div>
+            <div
+              class="mx-1 hover:opacity-80 text-xl max-sm:text-sm text-black dark:text-white"
+            >
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-twitter brand"></i
+              ></a>
+            </div>
+            <div
+              class="mx-1 hover:opacity-80 text-xl max-sm:text-sm text-black dark:text-white"
+            >
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-whatsapp brand"></i
+              ></a>
+            </div>
+            <div
+              class="mx-1 hover:opacity-80 text-xl max-sm:text-sm text-black dark:text-white"
+            >
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-instagram brand"></i
+              ></a>
+            </div>
+            <div
+              class="mx-1 hover:opacity-80 text-xl max-sm:text-sm text-black dark:text-white"
+            >
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-facebook brand"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part02 -->
+      <hr class="w-5/6 h-0.5 border-0 mx-auto bg-gray-700" />
+      <section
+        class="py-10 px-1 flex flex-row flex-wrap justify-center items-center gap-5"
+      >
+        <h2
+          class="text-2xl max-sm:text-lg text-center font-semibold text-gray-700"
+        >
+          For better experience, download the Twiggy app now
+        </h2>
+        <div class="flex flex-row">
+          <div
+            class="mx-3 cursor-pointer transform transition-transform duration-150 ease-in-out hover:scale-110"
+          >
+            <img src="./img/GPIcon.png" alt="Google Play Icon" />
+          </div>
+          <div
+            class="mx-3 cursor-pointer transform transition-transform duration-150 ease-in-out hover:scale-110"
+          >
+            <img src="./img/ASIcon.png" alt="Apple Store Icon" />
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Light/Dark Button -->
+    <button
+      class="rounded-full w-12 h-12 fixed bottom-2 right-2 cursor-pointer flex items-center justify-center"
+    >
+      <span class="sun text-xl hover:text-2xl duration-150 ease-in-out">☀</span
+      ><span class="moon text-xl hover:text-2xl duration-150 ease-in-out"
+        >🌙</span
+      >
+    </button>
+  </body>
+  <!-- Fontawesome script -->
+  <script
+    src="https://kit.fontawesome.com/7e59fb41a7.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Light/Dark Theme JS -->
+  <script src="./js/theme.js"></script>
+  <!-- mobile menu toggle script -->
+  <script src="./js/mobileMenu.js" defer></script>
+</html>
