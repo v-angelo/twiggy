@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twiggy</title>
     <!-- favicon -->
-    <link rel="icon" href="./img/logo.ico" />
+    <link rel="icon" href="./img/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body
     id="start"
-    class="min-h-screen max-w-480 mx-auto bg-slate-50 dark:bg-gray-950 text-white"
+    class="min-h-screen max-w-640 mx-auto bg-slate-50 dark:bg-gray-950 text-white"
   >
     <div class="h-10 w-full bg-lime-500 dark:bg-lime-600 hidden md:block"></div>
     <!-- Header -->
@@ -23,7 +23,7 @@
           href="#start"
           alt="frontPageLink"
         >
-          <img class="h-full" src="./img/logo.ico" alt="twiggyLogo" />
+          <img class="h-full" src="./img/twiggyLogo.png" alt="twiggyLogo" />
           <h3 class="text-3xl font-bold">Twiggy</h3>
         </a>
         <div
@@ -95,7 +95,7 @@
       <!-- Page 01 -->
       <section
         id="page01"
-        class="min-h-[calc(100vh-72px)] w-full bg-lime-500 dark:bg-lime-600 relative overflow-hidden z-0"
+        class="min-h-[calc(100vh-72px)] max-h-512 w-full bg-lime-500 dark:bg-lime-600 relative overflow-hidden z-0"
       >
         <figure
           class="absolute left-0 top-10 h-full w-1/2 max-w-xl -z-5 opacity-85"
@@ -116,12 +116,12 @@
           />
         </figure>
         <h1
-          class="w-3/5 max-w-5xl mx-auto mt-20 2xl:mt-30 2xl:text-7xl text-3xl md:text-5xl font-bold text-center"
+          class="md:w-3/5 w-9/10 max-w-5xl mx-auto mt-15 2xl:mt-30 2xl:text-7xl max-md:text-[40px] max-md:leading-12 md:text-5xl lg:text-6xl font-bold text-center"
         >
           Order food & groceries. Discover best restaurants. Twiggy it!
         </h1>
         <article
-          class="mx-15 mt-10 2xl:mt-20 flex flex-col md:flex-row justify-center items-center gap-5"
+          class="mx-15 mt-12 2xl:mt-25 flex flex-col md:flex-row justify-center items-center gap-10"
         >
           <form
             class="text-gray-600 dark:text-white bg-white dark:bg-gray-800 w-75 h-12 rounded-lg flex items-center gap-3"
@@ -150,7 +150,7 @@
         </article>
         <!-- 3 boxes -->
         <div
-          class="flex flex-row justify-center items-center max-md:flex-col max-w-4xl mx-auto my-10 2xl:mt-20 gap-7"
+          class="flex flex-row justify-center items-center max-md:flex-col max-w-4xl mx-auto mt-12 pb-20 2xl:mt-20 gap-7"
         >
           <!-- box1 -->
           <article
@@ -468,7 +468,7 @@
             Shop groceries on Instamart
           </h2>
           <section
-            class="py-5 mb-20 grid grid-rows-1 grid-cols-[repeat(15,minmax(200px,1fr))] gap-5 grid-flow-col max-w-5xl overflow-x-auto"
+            class="py-5 mb-20 grid grid-rows-1 grid-cols-[repeat(15,minmax(150px,1fr))] gap-5 grid-flow-col max-w-5xl overflow-x-auto items-baseline"
           >
             <!-- Item01 -->
             <article
@@ -477,7 +477,9 @@
               <figure class="w-30 h-30 rounded-full overflow-hidden">
                 <img class="" src="./img/groceries/veggies.jpg" alt="veggies" />
               </figure>
-              <figcaption class="text-gray-500 font-semibold text-xl">
+              <figcaption
+                class="text-gray-500 font-semibold text-xl text-center"
+              >
                 Fresh Vegetables
               </figcaption>
             </article>
@@ -555,7 +557,9 @@
                   alt="instantFrozenFood"
                 />
               </figure>
-              <figcaption class="text-gray-500 font-semibold text-xl">
+              <figcaption
+                class="text-gray-500 text-center font-semibold text-xl"
+              >
                 Instant / Frozen Food
               </figcaption>
             </article>
@@ -637,7 +641,9 @@
                   alt="cleaning"
                 />
               </figure>
-              <figcaption class="text-gray-500 font-semibold text-xl">
+              <figcaption
+                class="text-gray-500 text-center font-semibold text-xl"
+              >
                 Cleaning Products
               </figcaption>
             </article>
@@ -652,7 +658,9 @@
                   alt="babyCare"
                 />
               </figure>
-              <figcaption class="text-gray-500 font-semibold text-xl">
+              <figcaption
+                class="text-gray-500 font-semibold text-xl text-center"
+              >
                 Babycare Products
               </figcaption>
             </article>
@@ -717,12 +725,12 @@
             Order online in Mumbai
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Gurgaon
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Pune
           </article>
@@ -732,12 +740,12 @@
             Order online in Chennai
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Kolkata
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Ahmedabad
           </article>
@@ -747,27 +755,27 @@
             Order online in Kochi
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Vizag
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Mysore
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Waragal
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Trichy
           </article>
           <article
-            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer"
+            class="w-50 h-20 px-6 hover:opacity-85 inline-flex border border-gray-500 rounded-2xl justify-center items-center text-gray-600 font-semibold text-center cursor-pointer max-sm:hidden"
           >
             Order online in Allahbad
           </article>
@@ -792,7 +800,7 @@
         >
           <div class="mr-10 flex flex-row items-center justify-center">
             <div class="w-12">
-              <img src="./img/logo.ico" alt="twiggyLogo" />
+              <img src="./img/twiggyLogo.png" alt="twiggyLogo" />
             </div>
             <h3 class="max-lg:text-2xl text-3xl font-bold text-lime-400">
               Twiggy
