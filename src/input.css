@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --breakpoint-md: 50rem;
+    --breakpoint-md: 51rem;
+    --breakpoint-3xl: 121rem;
     --animate-slideDown: openMenu 0.5s ease-in-out forwards;
 
     @keyframes openMenu {
